@@ -15,3 +15,5 @@ app.get('/:date', function(req, res) {
 var server = app.listen(8080, function(){
     console.log('express is listening on port 8080');
 })
+
+module.exports = app; // for testing
