@@ -3,11 +3,17 @@ module.exports = {
 
         var input = new Date(date);
         
-        var result = {
-            "unix":     input.getTime(),
-            "natural":  input.toDateString()
-        };
-
+        if (input.toDateString() != "Invalid Date") {
+            var result = {
+                "unix":     input.getTime(),
+                "natural":  input.toDateString()
+            };
+        } else {
+            var result = {
+                "unix":     null,
+                "natural":  null
+            };
+        }
         return fn(result);
     } 
 };
