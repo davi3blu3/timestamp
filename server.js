@@ -6,10 +6,8 @@ app.get('/', function(req, res) {
     res.send('Hello from c9 + express');
 })
 
-
 app.get('/:date', function(req, res) {
     func.processParam(req.params.date, function(result) {
-        console.log(result);
         res.send(result);
     });
 })
