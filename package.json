@@ -4,7 +4,6 @@
   "description": "A timestamp microservice",
   "main": "server.js",
   "scripts": {
-    "test": "mocha",
     "start": "node server.js"
   },
   "author": "davi3blu3",
