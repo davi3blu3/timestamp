@@ -3,7 +3,7 @@ var app = express();
 var func = require('./functions.js');
 
 app.get('/', function(req, res) {
-    res.send('Hello from c9 + express');
+    res.sendFile(__dirname + '/public/index.html');
 })
 
 app.get('/:date', function(req, res) {
